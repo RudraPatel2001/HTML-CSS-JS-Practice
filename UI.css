@@ -1,0 +1,51 @@
+html, body{
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+    height: 100%;
+}
+
+#main{
+    background-image: url('mes2.jpg');
+    background-size: cover;
+    background-position: right;
+    height: 45vh;
+    width: 13vw;
+    border: 1px solid black;
+    border-radius: 2vh;
+}
+
+.add{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 6vh;
+    border-radius: 0 0 2vh 2vh;
+    margin-top: 39vh;
+    font-size: small;
+    user-select: none;
+}
+
+.add #lm{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 1vw;
+}
+
+.add #btn{
+    width: 2.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: x-large;
+    margin-right: 0.5vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add #btn:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="imggal.css"> -->
+    <title>Document</title>
+</head>
+<style>
+    html, body{
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+    height: 100%;
+}
+.gal{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.abc{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 48%;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 40vw;
+    height: 35vh;
+    border-radius: 2vh;
+    transition: 0.3s ease-in-out;
+}
+img:hover{
+    opacity: 0.7;
+    transform: scale(1.03);
+}
+</style>
+<body>
+    <div class="gal">
+        <div class="abc"><a href="bg1.jpg"><img src="bg1.jpg" alt=""><h2>Image 1</h2></a></div>
+        <div class="abc"><a href="bg2.jpg"><img src="bg2.jpg" alt=""><h2>Image 2</h2></a></div>
+        <div class="abc"><a href="bg3.jpg"><img src="bg3.jpg" alt=""><h2>Image 3</h2></a></div>
+        <div class="abc"><a href="bg4.jpg"><img src="bg4.jpg" alt=""><h2>Image 4</h2></a></div>
+    </div>
+</body>
+</html>

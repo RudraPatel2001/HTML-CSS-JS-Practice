@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="weatherlogo.png">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="weather.js"></script>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Weather API</title>
+</head>
+
+<body>
+    <div class="input">
+        <img src="weatherlogo.png" alt="">
+        <div class="inner">
+            <input type="text" id="city" placeholder="CityName">
+            <button type="submit" onclick="jsonAPI()">Submit</button>
+        </div>
+    </div>
+    <div class="my-weather">
+        <img src="" alt="" class="icon">
+        <div class="fit">
+            <div class="name">City&nbsp;/&nbsp;</div>
+            <div class="cityname api"></div>
+        </div>
+        <div class="fit">
+            <div class="name">Temperature&nbsp;/&nbsp;</div>
+            <div class="temp api"></div>
+        </div>
+        <div class="fit">
+            <div class="name">Weather&nbsp;/&nbsp;</div>
+            <div class="weather api"></div>
+        </div>
+        <div class="wiki"></div>
+    </div>
+</body>
+
+</html>

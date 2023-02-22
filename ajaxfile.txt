@@ -1,0 +1,1 @@
+<h1 style="font-family: sans-serif; color: #343d40;">AJAX is Reading File using XMLHttpRequest</h1>

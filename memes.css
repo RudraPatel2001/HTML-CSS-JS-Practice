@@ -1,0 +1,40 @@
+body{
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+}
+
+.title {
+    background-color: white;
+    font-size: 32px;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#memes-container {
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+}
+
+#memes-container .card {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#memes-container .card img {
+    height: auto;
+    width: 450px;
+    box-shadow: 0 0 12px 2px rgba(155, 155, 155, 0.25);
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    #memes-container .card img {
+        width: 250px;
+    }
+}

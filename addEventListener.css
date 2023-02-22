@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#hello{
+    height: 200px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn1{
+    cursor: pointer;
+    background-color: rgb(27, 96, 119);
+    margin-right: 5px;
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+#btn2{
+    cursor: pointer;
+    background-color: rgb(153, 49, 49);
+    margin-left: 5px;
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+#click{
+    background-color: black;
+    color: white;
+    height: 200px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#daba{
+    margin-right: 5px;
+}
+
+#matdaba{
+    margin-left: 5px;
+}
+
+#click button{
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#date{
+    height: 75px;
+}

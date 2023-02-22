@@ -1,0 +1,47 @@
+body{
+    margin : 0;
+    padding : 0;
+    font-family : monospace;
+}
+
+div{
+    width: max-content;
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div::before, div::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+div::before{
+    background-color: white;
+    animation: ok 5s steps(23) 700ms forwards;
+}
+
+div::after{
+    width: 0.1vw;
+    background-color: black;
+    animation: ok 5s steps(23) 700ms forwards,
+        blink 435ms steps(23) infinite;
+}
+
+@keyframes ok {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}

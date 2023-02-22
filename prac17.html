@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,=">
+    <title>Form Required</title>
+</head>
+<style>
+    #btn {
+        margin-top: 5px;
+    }
+</style>
+
+<body style="font-family: sans-serif;">
+    <h1>My Form</h1>
+    <form>
+        <fieldset>
+            <legend>MyForm</legend>
+            <p>Name : <input type="text" id="name" name="name" required>
+                <span id="na"></span>
+            </p>
+            <p>Address : <input type="text" id="add" name="add" required>
+                <span id="ad"></span>
+            </p>
+            <p>Gender : <input type="text" id="gen" name="gen" required>
+                <span id="ge"></span>
+            </p>
+            <p>Occupation : <input type="text" id="occ" name="occ" required>
+                <span id="oc"></span>
+            </p>
+            <p>Email ID : <input type="email" id="eid" name="eid" oninput="validateEmail()" required>
+                <span id="ei"></span>
+            </p>
+            <button type="submit" id="btn">Submit</button>
+        </fieldset>
+    </form>
+</body>
+<script src="prac17.js"></script>
+
+</html>

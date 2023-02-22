@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url('bg4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textb{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    background-color: aqua;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aqua;
+}
+.textb h1{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin: 40px;
+    padding: 13px 0;
+}
+.tex{
+    width: 280px;
+    font-size: 20px;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin: 8px 0;
+    padding: 8px 0;
+}
+.tex i{
+    float: left;
+    background: none;
+    cursor: pointer;
+    color: black;
+}
+.tex input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    float: left;
+    margin: 0 10px;
+}
+button{
+    width: 280px;
+    background: transparent;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(192, 52, 52);
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+button:hover{
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    background-color: grey;
+}

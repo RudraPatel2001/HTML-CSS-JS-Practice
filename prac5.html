@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Form</title>
+</head>
+
+<body style="font-family: sans-serif; background-color: lightgrey;">
+    <h1 style="text-align: center;">My Form</h1>
+    <form action="prac5.php" method="post">
+        <fieldset>
+            <legend>My Form</legend>
+            <p>First Name : <input type="text" name="fname" placeholder="First Name"></p>
+            <p>Last Name : <input type="text" name="lname" placeholder="Last Name"></p>
+            <p style="margin-left: 50px;">Age : <input type="text" name="age" placeholder="Age"></p>
+            <p style="margin-left: 43px;">DOB : <input type="text" name="dob" placeholder="Date of Birth"></p>
+            <p style="margin-left: 18px;">Address : </p>
+            <textarea style="margin-left: 90px;" rows="4" name="address" placeholder="Address"></textarea>
+            <p style="margin-left: 10px;">Phone No : <input style="width: 25px;" type="text" namplaceholder="" value="+91"><input style="margin-left: 5px;" type="text" name="pno" placeholder="Phone No"></p>
+            <p style="margin-left: 20px;">Email ID : <input type="text" name="eid" placeholder="Email ID"></p>
+            <p style="margin-left: 22px;">Hobbies : <input type="text" name="hobbies" placeholder="Hobbies"></p>
+            <p style="margin-left: 52px;">City : <input type="text" name="city" placeholder="City"></p>
+            <p style="margin-left: 42px;">State : <input type="text" name="state" placeholder="State"></p>
+            <p style="margin-left: 22px;">Country : <input type="text" name="country" placeholder="Country"></p>
+            <p style="margin-left: 25px;">Gender : <input type="radio" name="gen" id="rad1">
+                <label for="rad1">Male</label>
+                <input type="radio" id="rad12">
+                <label for="rad2">Female</label>
+                <input type="radio" id="rad13">
+                <label for="rad3">Others</label></p>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

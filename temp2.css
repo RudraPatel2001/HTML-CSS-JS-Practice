@@ -1,0 +1,132 @@
+body{
+    margin : 0;
+    padding : 0;
+    font-family : 'ubuntu', sans-serif;
+    background: url('city.gif') no-repeat fixed center;
+    background-size: cover;
+}
+
+.wrap{
+    display: grid;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.input{
+    width: 70vw;
+    padding: 2vh 1vw;
+    border-radius: 1vh;
+    background-color: rgba(157, 169, 236, 0.65);
+    text-align: center;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input img{
+    height: 25px;
+    width: 25px;
+    border-radius: 1vh;
+}
+
+.input .inner{
+    min-width: 250px;
+    text-align: center;
+}
+
+.input input{
+    margin: 0 1.5vw;
+    height: 25px;
+    border: none;
+    background: transparent;
+    border-bottom: thin solid black;
+    outline: none;
+}
+
+.input button{
+    border: none;
+    border-radius: 0.55vh;
+    background: rgb(155, 161, 235);
+    height: 28px;
+    width: 6vw;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    min-width: fit-content;
+}
+
+.input button:hover{
+    box-shadow: 0 0 0.2vw 0.2vh rgba(0, 0, 0, 0.4);
+    background-color: transparent;
+}
+
+.my-weather{
+    width: 70vw;
+    padding: 2vh 1vw;
+    border-radius: 1vh;
+    background-color: rgba(157, 169, 236, 0.65);
+    text-align: center;
+    margin-top: 4vh;
+    font-size: 30px;
+}
+
+@media (max-width : 850px) {
+    .my-weather{
+        font-size: 20px;
+    }
+}
+
+@media (max-width : 600px) {
+    .my-weather{
+        font-size: 15px;
+    }
+}
+
+.my-weather .fit{
+    display: flex;
+}
+
+.my-weather .name{
+    width: 50%;
+    text-align: right;
+    margin: 2vh 0;
+    letter-spacing: 0.05vw;
+}
+
+.my-weather .api{
+    width: 50%;
+    text-align: left;
+    margin: 2vh 0;
+    letter-spacing: 0.05vw;
+}
+
+.my-weather .wiki{
+    margin: 2vh 0;
+    font-size: small;
+    font-weight: 500;
+    letter-spacing: 0.1vw;
+}
+
+.my-weather .wiki a{
+    color: rgb(69, 12, 87);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.my-weather .wiki a:hover{
+    color: rgb(139, 6, 139);
+}
+
+.credit{
+    width: 70vw;
+    padding: 2vh 1vw;
+    border-radius: 1vh;
+    background-color: rgba(157, 169, 236, 0.65);
+    text-align: center;
+    margin-top: 4vh;
+    font-size: small;
+    font-weight: 700;
+}

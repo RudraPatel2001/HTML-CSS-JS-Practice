@@ -1,0 +1,17 @@
+body{
+    font-family : sans-serif;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 7vh;
+    column-gap: 7vw;
+}
+
+.main .para {
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}

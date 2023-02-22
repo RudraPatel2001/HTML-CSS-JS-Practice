@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="ghbg.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Wordle.css">
+    <title>Wordle</title>
+</head>
+
+<body onload="resetWordle()">
+    <div class="container">
+        <div class="title">WORDLE</div>
+        <div class="inputBox">
+            <input type="password" id="word" maxlength="5" oninput="this.value = this.value.toUpperCase()"
+                placeholder="Enter Word">
+            <button id="set" onclick="setWordle()">Set Word</button>
+            <button id="reset" onclick="resetWordle()">Reset Word</button>
+        </div>
+        <div>
+            <input type="text" class="inp1" id="txt1" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, '', 'txt1', 'txt2')">
+            <input type="text" class="inp1" id="txt2" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt1', 'txt2', 'txt3')">
+            <input type="text" class="inp1" id="txt3" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt2', 'txt3', 'txt4')">
+            <input type="text" class="inp1" id="txt4" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt3', 'txt4', 'txt5')">
+            <input type="text" class="inp1" id="txt5" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt4', 'txt5', '')">
+            <button type="submit" id="f1" class="Enter">Enter</button>
+        </div>
+        <div>
+            <input type="text" class="inp2" id="txt6" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, '', 'txt6', 'txt7')">
+            <input type="text" class="inp2" id="txt7" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt6', 'txt7', 'txt8')">
+            <input type="text" class="inp2" id="txt8" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt7', 'txt8', 'txt9')">
+            <input type="text" class="inp2" id="txt9" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt8', 'txt9', 'txt10')">
+            <input type="text" class="inp2" id="txt10" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt9', 'txt10', '')">
+            <button type="submit" id="f2" class="Enter">Enter</button>
+        </div>
+        <div>
+            <input type="text" class="inp3" id="txt11" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, '', 'txt11', 'txt12')">
+            <input type="text" class="inp3" id="txt12" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt11', 'txt12', 'txt13')">
+            <input type="text" class="inp3" id="txt13" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt12', 'txt13', 'txt14')">
+            <input type="text" class="inp3" id="txt14" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt13', 'txt14', 'txt15')">
+            <input type="text" class="inp3" id="txt15" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt14', 'txt15', '')">
+            <button type="submit" id="f3" class="Enter">Enter</button>
+        </div>
+        <div>
+            <input type="text" class="inp4" id="txt16" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, '', 'txt16', 'txt17')">
+            <input type="text" class="inp4" id="txt17" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt16', 'txt17', 'txt18')">
+            <input type="text" class="inp4" id="txt18" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt17', 'txt18', 'txt19')">
+            <input type="text" class="inp4" id="txt19" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt18', 'txt19', 'txt20')">
+            <input type="text" class="inp4" id="txt20" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt19', 'txt20', '')">
+            <button type="submit" id="f4" class="Enter">Enter</button>
+        </div>
+        <div>
+            <input type="text" class="inp5" id="txt21" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, '', 'txt21', 'txt22')">
+            <input type="text" class="inp5" id="txt22" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt21', 'txt22', 'txt23')">
+            <input type="text" class="inp5" id="txt23" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt22', 'txt23', 'txt24')">
+            <input type="text" class="inp5" id="txt24" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt23', 'txt24', 'txt25')">
+            <input type="text" class="inp5" id="txt25" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt24', 'txt25', '')">
+            <button type="submit" id="f5" class="Enter">Enter</button>
+        </div>
+        <div>
+            <input type="text" class="inp6" id="txt26" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, '', 'txt26', 'txt27')">
+            <input type="text" class="inp6" id="txt27" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt26', 'txt27', 'txt28')">
+            <input type="text" class="inp6" id="txt28" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt27', 'txt28', 'txt29')">
+            <input type="text" class="inp6" id="txt29" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt28', 'txt29', 'txt30')">
+            <input type="text" class="inp6" id="txt30" maxlength="1" oninput="this.value = this.value.toUpperCase()"
+                onkeyup="movePointer(event, 'txt29', 'txt30', '')">
+            <button type="submit" id="f6" class="Enter">Enter</button>
+        </div>
+        <div class="answer" id="ans">
+            <div id="text"></div>
+            <div id="click">Click anywhere to continue</div>
+        </div>
+    </div>
+
+    <script src="Wordle.js"></script>
+
+</body>
+
+</html>

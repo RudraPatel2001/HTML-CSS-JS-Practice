@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        margin : 0;
+        padding : 0;
+        font-family : sans-serif;
+    }
+    .container {
+        display: grid;
+        place-items: center;
+        margin: 30px 0;
+    }
+    .container button, h3 {
+        margin: 10px 0;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h3>Method 1</h3>
+        <input type="text" id="input" placeholder="Enter Number">
+        <button id="btn1">ClickMe</button>
+    </div>
+    <div class="container">
+        <h3>Method 2</h3>
+        <div class="box">
+            <input type="text" id="left" placeholder="Enter Starting Number">
+            <input type="text" id="right" placeholder="Enter Ending Number">
+        </div>
+        <button id="btn2">ClickMe</button>
+        <div id="m2"></div>
+    </div>
+    <script src="awp5.js"></script>
+</body>
+
+</html>

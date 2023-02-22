@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="jsQuiz.css">
+    <title>JavaScript Quiz</title>
+</head>
+<body>
+    <header>
+        <div>View Highscores&nbsp;<i class="fa fa-hand-o-left fa-lg" aria-hidden="true"></i></div>
+        <div id="time">Time:&nbsp;</div>
+    </header>
+    <main class="container">
+        <div id="startQuiz" class="start">
+            <h2>Coding Quiz Challenge</h2>
+            <p>Try to answer the following code-related questions within the time limit.</p>
+            <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds.</p>
+            <button id="sQuiz">Start Quiz</button>
+        </div>
+        <div id="quesContain" class="question">
+            <h3 id="ques"></h3>
+            <div class="opt" id="opt1"></div>
+            <div class="opt" id="opt2"></div>
+            <div class="opt" id="opt3"></div>
+            <div class="opt" id="opt4"></div>
+            <button id="subBtn">Submit</button>
+        </div>
+    </main>
+    <script src="jsQuiz.js"></script>
+</body>
+</html>

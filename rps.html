@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rps.css">
+    <link rel="icon" href="./rps.jpg">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <div class="players">
+        <div id="p1" class="p">
+            <div class="tag">Computer</div>
+            <button>Rock</button>
+            <button>Paper</button>
+            <button>Scissor</button>
+            <div class="score" id="s1">Score : 0</div>
+        </div>
+        <div id="p2" class="p">
+            <div class="tag">You</div>
+            <button onclick="getUserValue(event)">Rock</button>
+            <button onclick="getUserValue(event)">Paper</button>
+            <button onclick="getUserValue(event)">Scissor</button>
+            <div class="score" id="s2">Score : 0</div>
+        </div>
+    </div>
+</body>
+<script src="rps.js"></script>
+</html>

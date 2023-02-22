@@ -1,0 +1,20 @@
+body{
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+    background: url('city.gif') no-repeat fixed center;
+    background-size: cover;
+    color: white;
+}
+
+li{
+    list-style: square;
+}
+
+li a:link{
+    color: blue;
+}
+
+li a:visited{
+    color: red;
+}

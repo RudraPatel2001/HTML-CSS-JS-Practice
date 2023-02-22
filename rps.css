@@ -1,0 +1,52 @@
+html, body{
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #8f44fd;
+    min-height: 100vh;
+}
+.players {
+    display: flex;
+    justify-content: center;
+}
+.players .p {
+    width: 250px;
+    display: grid;
+    place-items: center;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px 15px;
+}
+.players .p .tag, .score {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin: 8px 0;
+}
+.players .p button {
+    all: unset;
+    width: 50%;
+    background: #00ffea;
+    text-align: center;
+    border-radius: 3px;
+    padding: 8px 4px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .players {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 300px) {
+    .players .p {
+        width: 225px;
+    }
+}

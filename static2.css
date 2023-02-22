@@ -1,0 +1,31 @@
+html, body{
+    margin : 0;
+    padding : 0;
+    font-family : monospace;
+    height: 100vh;
+}
+
+.ok{
+    font-size: 18px;
+    width: 40vw;
+    height: 40vh;
+    border-radius: 2vh;
+    box-shadow: 0.7vh 0.7vw 0.7vw 0.3vh rgba(0, 0, 0, 0.45);
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+    padding: 2vh 1vw;
+    min-width: fit-content;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(173, 216, 230, 0.3);
+    min-height: 200px;
+}

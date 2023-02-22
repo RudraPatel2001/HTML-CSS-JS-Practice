@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app="app2" ng-controller="ctrl2">
+        <input type="text" ng-model="stu.fn">
+        <input type="text" ng-model="stu.ln | uppercase">
+        <input type="text" ng-model="stu.price | currency">
+        <div>{{ stu.full() }}</div>
+        <div>{{ ok }}</div>
+        <div>{{ time }}</div>
+    </div>
+</body>
+<script>
+    var app = angular.module("app2", [])
+    var ctrl = app.controller("ctrl2", function($scope, $interval, $timeout) {
+        $scope.stu = {
+            fn: "Gods",
+            ln: "Eye",
+            price: 2000,
+            full: function() {
+                var s = $scope.stu;
+                return s.fn + " " + s.ln;
+            }
+        };
+        $scope.ok = "Before Timeout"
+        $timeout(function() {
+            $scope.ok = "After Interval"
+        }, 3000);
+        $interval(function() {
+            $scope.time = new Date().toLocaleTimeString()
+        }, 1000)
+    })
+</script>
+</html>

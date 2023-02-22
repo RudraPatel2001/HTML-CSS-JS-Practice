@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    user-select: none;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+}
+
+.container .title {
+    color: #123456;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 0.75px 10px 1px #123456;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.container .inputBox {
+    margin-bottom: 10px;
+}
+
+.container .inputBox input::placeholder {
+    font-size: 12.5px;
+}
+
+.container div {
+    display: flex;
+    margin: 2px 0;
+}
+
+.container div input,
+button,
+#reset {
+    height: 40px;
+    background-color: #272729;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 0 2px;
+}
+
+.container div button,
+#reset {
+    letter-spacing: 1px;
+}
+
+.container div input {
+    width: 40px;
+    text-align: center;
+}
+
+.container div button {
+    width: 100px;
+    cursor: pointer;
+}
+
+#word {
+    width: 80px;
+}
+
+#reset {
+    width: 135px;
+    cursor: pointer;
+}
+
+#set {
+    width: 115px;
+}
+
+.answer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(43, 48, 51);
+    height: 65vh;
+    width: 40vw;
+    padding: 2.5vh 2.5vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.answer #text {
+    font-size: 35px;
+    margin-top: 30%;
+    color: lightblue;
+    line-height: 1.5;
+}
+
+.answer #click {
+    font-size: 25px;
+    color: rgb(201, 198, 198);
+}
+
+.answer br {
+    margin-top: 3px;
+}
+
+@media (max-width: 650px) {
+    .container div input {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .container div button {
+        height: 30px;
+        width: 80px;
+        font-size: 10px;
+    }
+    #word {
+        width: 60px;
+        height: 30px;
+        font-size: 10px;
+    }
+    #reset {
+        height: 30px;
+        width: 110px;
+        font-size: 10px;
+    }
+    .container .inputBox input::placeholder {
+        font-size: 10px;
+    }
+    #set {
+        width: 90px;
+        font-size: 10px;
+    }
+    .answer {
+        height: 40vh;
+        width: 90%;
+    }
+    .answer #text {
+        font-size: 25px;
+    }
+    .answer #click {
+        font-size: 15px;
+    }
+}

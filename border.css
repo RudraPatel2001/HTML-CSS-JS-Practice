@@ -1,0 +1,22 @@
+.dot{
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    animation: A 3s ease-in-out infinite;
+}
+@keyframes A{
+    0%{margin: 0 0;}
+    25%{margin: 300px 0;}
+    50%{margin: 300px 1000px;}
+    75%{margin: 0 1000px;}
+    100%{margin: 0 0;}
+}
+p{
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+    border: 2px solid black;
+    border-radius: 4px;
+}

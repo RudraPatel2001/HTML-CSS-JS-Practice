@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #123456; color: white;">
+    <div class="container">
+        <h1 class="my-1">Bootstrap Form</h1>
+        <form action="">
+            <div class="my-1 form-group">
+                <label class="my-1" for="">Name</label class="my-1">
+                <input class="form-control" type="text" placeholder="Enter Name">
+            </div>
+            <div class="my-1 form-group">
+                <label class="my-1" for="">Age</label class="my-1">
+                <input class="form-control" type="number" placeholder="Enter Age">
+            </div>
+            <div class="my-1 form-group">
+                <label class="my-1" for="">Gender</label class="my-1">
+                <select class="form-control" name="" id="">
+                    <option selected disabled value="Select Gender">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="my-1 form-group">
+                <label class="my-1" for="">Email</label class="my-1">
+                <input class="form-control" type="email" placeholder="Enter Email">
+            </div>
+            <div class="my-1 form-group" style="display: grid;">
+                <label class="my-1" for="">Address</label class="my-1">
+                <textarea type="text" class="form-control" rows="5" placeholder="Enter Address"></textarea>
+            </div>
+            <div class="my-2">
+                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="reset" class="btn btn-danger mx-1">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script src="bootstrap.min.js"></script>
+</body>
+
+</html>

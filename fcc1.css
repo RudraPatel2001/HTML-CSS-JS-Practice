@@ -1,0 +1,41 @@
+body{
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#quote-box {
+    width: 75vw;
+    display: grid;
+    place-items: center;
+}
+
+#text {
+    font-size: x-large;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#author {
+    width: 75%;
+    text-align: right;
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+#new-quote {
+    background-color: #123456;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#tweet-quote {
+    color: #00fc;
+}

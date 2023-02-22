@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Angular1</title>
+</head>
+
+<body>
+    <div ng-app="app1" ng-controller="ctrl" class="main" style="font-family: sans-serif;">
+        <input type="text" ng-model="search" placeholder="SEARCH names" style="outline: none;">
+        <ul class="myList">
+            <li ng-repeat="x in names | filter:search">{{ x }}</li>
+        </ul>
+    </div>
+    <script>
+        var app = angular.module('app1', []);
+        app.controller('ctrl', function ($scope) {
+            $scope.names = [
+                'Messi',
+                'Ronaldo',
+                'Lewandowski',
+                'Salah',
+                'Iniesta',
+                'DeBruyne',
+                'Mbappe',
+                'Haaland',
+                'Benzema',
+                'Neymar',
+                'Rudiger',
+                'VirgilVD',
+                'Lukaku',
+                'Ramos',
+                'Modric',
+                'Casemiro',
+                'Suarez',
+                'Bernardo',
+                'Kane',
+                'Pele',
+                'Maradona',
+                'Ronaldinho'
+            ];
+        });
+    </script>
+</body>
+
+</html>

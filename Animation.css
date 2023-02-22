@@ -1,0 +1,32 @@
+@keyframes A{
+    0%{background-color: black; color: rgb(156, 241, 156);}
+    25%{background-color: rgb(156, 241, 156); margin: 35vh 0; color: black;}
+    50%{background-color: black; margin: 35vh 84vw; color: rgb(156, 241, 156);}
+    75%{background-color: rgb(156, 241, 156); margin: 0 84vw; color: black;}
+    100%{background-color: black; margin: 0 0; color: rgb(156, 241, 156);}
+}
+
+#circle{
+    height: 25vh;
+    width: 12.5vw;
+    border-radius: 50%;
+    background-color: black;
+    animation: A 5s infinite;
+    animation-timing-function: ease-in-out;
+    display: grid;
+    place-items: center;
+    font-size: xx-large;
+}
+
+@keyframes B{
+    0%{border-color: aqua;}
+    25%{border-color: black;}
+    50%{border-color: aqua;}
+    75%{border-color: black;}
+    100%{border-color: aqua;}
+}
+
+#circle p{
+    border: 2px solid rgb(255, 0, 0);
+    animation: B 5s ease-in-out infinite;
+}

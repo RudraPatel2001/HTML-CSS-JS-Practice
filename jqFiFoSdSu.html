@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade and Slide Methods</title>
+</head>
+<style>
+    .main {
+        border: 0.2em solid #9dcaf0;
+        margin: 1vh 0;
+        padding: 5px 0;
+        border-radius: 10px;
+    }
+
+    #fton {
+        background-color: red;
+    }
+
+    .wi90 {
+        width: 90%;
+        margin-left: 5%;
+        padding: 6px 5px;
+        border-radius: 5px;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        padding: 1vh 0;
+    }
+
+    .btn button {
+        cursor: pointer;
+        margin: 0 1vh;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div id="fio" class="wi90">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repellendus eius
+            quod optio nihil
+            sapiente quo, veritatis repellat ut illum impedit eaque fugiat magnam pariatur fuga mollitia blanditiis
+            dolorem, minima autem porro tempore ducimus? Pariatur nemo recusandae fuga dignissimos aliquid vel incidunt
+            magnam cum quos tenetur.
+        </div>
+        <div class="btn"><button id="fi">FadeIn</button>
+            <button id="fo">FadeOut</button>
+        </div>
+    </div>
+    <div class="main">
+        <div id="ftg" class="wi90">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi culpa molestiae
+            voluptas
+            repudiandae blanditiis! Temporibus odit sint eum. Incidunt itaque amet hic, eveniet error natus cumque, vel
+            nihil iure impedit ducimus deserunt, quasi recusandae facere esse earum! Debitis praesentium. Lorem ipsum
+            dolor sit amet consectetur. Lorem, ipsum.</div>
+        <div class="btn"><button id="ft">FadeToggle</button></div>
+    </div>
+    <div class="main">
+        <div id="fton" class="wi90">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, dolores mollitia illum recusandae saepe
+            aspernatur reprehenderit eligendi dolorum commodi labore officia nam aliquam, nemo odit impedit laborum, sit
+            quasi? Voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit. A, magni. Lorem ipsum dolor, sit
+            amet consectetur.
+        </div>
+        <div class="btn">
+            <button id="fto">FadeTo Opacity 0.3</button>
+            <button id="ftn">FadeTo Normal</button>
+        </div>
+    </div>
+    <div class="main">
+        <div id="sdu" class="wi90">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, sit doloremque et
+            libero beatae
+            laudantium laboriosam dolorem vero nihil amet. Commodi earum aut aspernatur veritatis, ad quisquam. Eius ab
+            nam
+            sequi laborum adipisci, dolores consequatur minima sapiente, eveniet consequuntur necessitatibus amet
+            explicabo
+            porro!</div>
+        <div class="btn"><button id="sd">SlideDown</button>
+            <button id="su">SlideUp</button>
+        </div>
+    </div>
+    <div class="main">
+        <div id="stg" class="wi90">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi atque natus, ipsa
+            officia fugit quod
+            magnam voluptatem. Possimus totam expedita molestias provident quia soluta ad, nostrum unde magni a magnam
+            eum
+            perferendis quos odit obcaecati voluptatum earum libero numquam qui praesentium dolore aut vitae quod amet?
+            Lorem, ipsum dolor.
+        </div>
+        <div class="btn"><button id="st">SlideToggle</button></div>
+    </div>
+</body>
+<script src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $('#fi').click(function () {
+        $('#fio').fadeIn(500);
+    })
+    $('#fo').click(function () {
+        $('#fio').fadeOut(500);
+    })
+    $('#fto').click(function () {
+        $('#fton').fadeTo("slow", 0.3);
+    })
+    $('#ftn').click(function () {
+        $('#fton').fadeTo("slow", 1);
+    })
+    $('#ft').click(function () {
+        $('#ftg').fadeToggle(500);
+    })
+    $('#sd').click(function () {
+        $('#sdu').slideDown(500);
+    })
+    $('#su').click(function () {
+        $('#sdu').slideUp(500);
+    })
+    $('#st').click(function () {
+        $('#stg').slideToggle(500);
+    })
+</script>
+
+</html>

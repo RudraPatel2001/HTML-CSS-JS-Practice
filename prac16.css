@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+}
+
+.container {
+    position: relative;
+    height: 1000px;
+}
+
+#movediv {
+    position: absolute;
+    width: auto;
+    padding: 5px;
+    background-color: #fff;
+}

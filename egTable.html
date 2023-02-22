@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Table</title>
+</head>
+<style>
+    body{
+        margin : 0;
+        padding : 0;
+        font-family : sans-serif;
+    }
+    table, tr, td{
+        border: 1px solid black;
+    }
+    tr:nth-child(even){
+        background-color: green;
+    }
+    tr:nth-child(odd){
+        background-color: blue;
+    }
+    div{
+        color: green;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <td colspan="2">One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Three</td>
+            <td>Four</td>
+            <td rowspan="2">Six</td>
+        </tr>
+        <tr>
+            <td>Five</td>
+        </tr>
+        <tr>
+            <td>Seven</td>
+            <td colspan="2">Eight</td>
+        </tr>
+    </table>
+
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" name="name">
+        <select name="" id="">
+            <option value="">PUBG</option>
+            <option value="">BGMI</option>
+            <option value="">VALO</option>
+            <option value="">CODM</option>
+        </select>
+    </form>
+
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et magnam nemo maiores magni. Ex similique eveniet culpa incidunt labore amet exercitationem excepturi veniam ipsam? Eius delectus consequatur rerum quos iure qui cumque sapiente illo repudiandae facilis vel unde enim eveniet sunt autem adipisci commodi impedit, voluptate, a distinctio? Ea, perferendis.</div>
+</body>
+</html>

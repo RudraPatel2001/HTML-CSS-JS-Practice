@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"
+        integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin : 0;
+        padding : 0;
+        font-family : sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #123456;
+    }
+    table,
+    th,
+    td {
+        border: 1px solid white;
+        text-align: center;
+        background-color: transparent;
+    }
+    table {
+        padding: 2px;
+    }
+    th {
+        cursor: pointer;
+    }
+    th,
+    td {
+        padding: 5px 15px;
+        font-size: 20px;
+        color: white;
+    }
+</style>
+
+<body>
+    <div ng-app="app" ng-controller="ctrl">
+        <table>
+            <tr>
+                <th ng-click="handleSort('pid')">Product ID</th>
+                <th ng-click="handleSort('pname')">Product Name</th>
+                <th ng-click="handleSort('pprice')">Product Price</th>
+            </tr>
+            <tr ng-repeat="x in tableObj | orderBy : order">
+                <td>{{ x.pid }}</td>
+                <td>{{ x.pname }}</td>
+                <td>{{ x.pprice }}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+    var app = angular.module('app', []);
+    app.controller('ctrl', function ($scope) {
+        $scope.tableObj = [
+            {
+                pid: 21,
+                pname: 'LenovoLaptops',
+                pprice: '60000'
+            },
+            {
+                pid: 23,
+                pname: 'AsusLaptops',
+                pprice: '55000'
+            },
+            {
+                pid: 22,
+                pname: 'MacBook',
+                pprice: '50000'
+            }
+        ]
+        $scope.handleSort = (query) => {
+            $scope.order = query;
+        }
+    })
+</script>
+
+</html>

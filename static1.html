@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <title>StaticWebPage</title>
+</head>
+
+<style>
+    .gridcon{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .i2{
+        background: url('bg4.jpg') no-repeat center;
+        background-size: cover;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .i3{
+        background: url('bg1.jpg') no-repeat center;
+        background-size: cover;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .i4{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        padding: 8.5vh 5.5vw;
+        text-align: center;
+        user-select: none;
+    }
+
+    img {
+        height: 45.3vh;
+        width: fit-content;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LearnPy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Syntax</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Watch Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Download</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="gridcon">
+        <div class="i1">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://source.unsplash.com/random/dogs" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://source.unsplash.com/random/water" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://source.unsplash.com/random/nature" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev carousel-dark" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next carousel-dark" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="i2"></div>
+        <div class="i3"></div>
+        <div class="i4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae maiores at officiis, atque ratione ipsam officia quia voluptatum, neque ad cupiditate dolorum blanditiis temporibus eos ab tenetur, unde accusantium hic!</div>
+    </div>
+</body>
+
+</html>

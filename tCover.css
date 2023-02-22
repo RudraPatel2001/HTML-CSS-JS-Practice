@@ -1,0 +1,76 @@
+body{
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+}
+
+.container{
+    background-color: #525858;
+    height: 33.3vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#cover{
+    height: 18vh;
+    width: 40%;
+    /* margin-left: 30%; */
+    color: white;
+    background-color: #525858;
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    border-radius: 2vh;
+    box-shadow: 0 0 1vw 1vh lightgreen;
+}
+
+#box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+#icon{
+    margin-right: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 4vw;
+    border-radius: 1vh;
+    box-shadow: 0 0 0.7vw 0.7vh rgb(252, 70, 100);
+}
+
+#name{
+    margin-left: 1vw;
+}
+
+#box2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+
+#insta{
+    text-align: center;
+    width: 3vw;
+    border-radius: 1vh;
+    box-shadow: 0 0 0.4vw 0.4vh rgb(220, 101, 250);
+}
+
+#github{
+    text-align: center;
+    width: 3vw;
+    border-radius: 1vh;
+    box-shadow: 0 0 0.4vw 0.4vh rgb(220, 101, 250);
+}
+
+#link{
+    text-align: center;
+    width: 3vw;
+    border-radius: 1vh;
+    box-shadow: 0 0 0.4vw 0.4vh rgb(220, 101, 250);
+}

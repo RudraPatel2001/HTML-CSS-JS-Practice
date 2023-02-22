@@ -1,0 +1,25 @@
+body{
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p{
+    font-size: xx-large;
+}
+
+p::before{
+    content: 'Hello';
+    background-color: lightcoral;
+    color: blue;
+}
+
+p::after{
+    content: 'GodsEye!';
+    background-color: lightgreen;
+    color: black;
+}

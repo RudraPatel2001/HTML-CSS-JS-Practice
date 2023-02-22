@@ -1,0 +1,56 @@
+body{
+    margin : 0;
+    padding : 0;
+    font-family : sans-serif;
+    color: white;
+}
+
+.wrap{
+    background: url('bg4.jpg') no-repeat fixed center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.wrap .light{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 56vw;
+    height: 56vh;
+    border-radius: 2vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#login{
+    margin-top: 10vh;
+    font-size: 7vh;
+    letter-spacing: 0.5vw;
+}
+
+.user{
+    margin-top: 13vh;
+    border-bottom: 1px solid white;
+    width: 18vw;
+    margin-left: 19vw;
+}
+
+.pass{
+    margin-top: 2vh;
+    border-bottom: 1px solid white;
+    width: 18vw;
+    margin-left: 19vw;
+}
+
+input{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: larger;
+    outline: none;
+}

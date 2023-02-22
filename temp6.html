@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Clip</title>
+</head>
+<style>
+    body{
+        margin : 0;
+        padding : 0;
+        font-family : sans-serif;
+        background-size: 200%;
+        background-image: linear-gradient(to right, rgb(153, 216, 216), rgb(204, 164, 223));
+        animation: ok 2s ease infinite;
+    }
+    .text {
+        background: blue url('./ney5.jpg') no-repeat center center / cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: 1px;
+        font-size: 72px;
+    }
+    @keyframes ok {
+        0% {
+            background-position: 0%;
+        }
+        25%{
+            background-position: 50%;
+        }
+        50% {
+            background-position: 100%;
+        }
+        75% {
+            background-position: 50%;
+        }
+        100% {
+            background-position: 0%;
+        }
+    }
+</style>
+<body>
+    <div class="text">Background Clip</div>
+</body>
+</html>
